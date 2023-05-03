@@ -20,10 +20,15 @@ from langchain.agents import load_tools
 from langchain.agents import initialize_agent
 from langchain.agents import AgentType
 from langchain.llms import OpenAI
-
+from decouple import config
 import os
-os.environ["SERPAPI_API_KEY"] = "a20b55a2acfc2f66f9eac9bbb70866dc6c6fc03a19ca6d47b6a41f84804b7e2d"
-os.environ["OPENAI_API_KEY"] = "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"
+
+SERPAPI_API_KEY_VAL = config('SERPAPI_API_KEY_VAL')
+OPENAI_API_KEY_VAL = config('OPENAI_API_KEY_VAL')
+
+
+os.environ["SERPAPI_API_KEY"] = SERPAPI_API_KEY_VAL
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY_VAL
 
 
 # First, let's load the language model we're going to use to control the agent.
