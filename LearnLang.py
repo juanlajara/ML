@@ -1,21 +1,3 @@
-""" from langchain.chains import LLMChain
-from langchain.prompts import PromptTemplate
-from langchain.llms import OpenAI
-
-import os
-os.environ["OPENAI_API_KEY"] = "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"
-llm = OpenAI(temperature=0.9)
-prompt = PromptTemplate(
-    input_variables=["product"],
-    template="What is a good name for a company that makes {product}?",
-)
-
-chain = LLMChain(llm=llm, prompt=prompt)
-
-print(chain.run("technology coaching services"))
-
- """
-
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
 from langchain.agents import AgentType
@@ -23,10 +5,11 @@ from langchain.llms import OpenAI
 from decouple import config
 import os
 
+# Load the API keys from the .env file
 SERPAPI_API_KEY_VAL = config('SERPAPI_API_KEY_VAL')
 OPENAI_API_KEY_VAL = config('OPENAI_API_KEY_VAL')
 
-
+# Set the API keys as environment variables
 os.environ["SERPAPI_API_KEY"] = SERPAPI_API_KEY_VAL
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY_VAL
 
