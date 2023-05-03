@@ -14,7 +14,6 @@ chain = LLMChain(llm=llm, prompt=prompt)
 
 print(chain.run("technology coaching services"))
 
-# -> '\n\nSocktastic!'
  """
 
 from langchain.agents import load_tools
