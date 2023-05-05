@@ -1,2 +1,3 @@
 # ML
-Learning Langchain and its tools (prompts, agents, tools)
+
+Learning Langchain and its assets (prompts, agents, tools)
