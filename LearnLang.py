@@ -6,8 +6,8 @@ from decouple import config
 import os
 
 # Load the API keys from the .env file
-SERPAPI_API_KEY_VAL = config('SERPAPI_API_KEY_VAL')
-OPENAI_API_KEY_VAL = config('OPENAI_API_KEY_VAL')
+SERPAPI_API_KEY_VAL = config('SERPAPI_API_KEY')
+OPENAI_API_KEY_VAL = config('OPENAI_API_KEY')
 
 # Set the API keys as environment variables
 os.environ["SERPAPI_API_KEY"] = SERPAPI_API_KEY_VAL
