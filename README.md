@@ -1,6 +1,6 @@
 # ML
 
-Learning Langchain and its assets (prompts, agents, tools). I created a PDF uploader that uses ChatGPT LLMs and Facebook's AI semantic search to answers questions based off of only the information provided in the PDF. This is a year
+Learning Langchain and its assets (prompts, agents, tools). I created a PDF uploader that uses ChatGPT LLMs and Facebook's AI semantic search to answers questions based off of only the information provided in the PDF.
 
 # Running this Application
 
